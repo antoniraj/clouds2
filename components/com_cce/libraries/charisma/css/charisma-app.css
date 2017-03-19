@@ -843,3 +843,10 @@ padding:0;
 #nav ul.menu li a:hover{
 	height: auto;
 }
+#nav ul.menu li ul{
+	background:#075e55;
+}
+#nav ul.menu li:hover ul li a,
+#nav ul.menu li ul li a,
+#nav ul.menu li.active ul li a{
+	background:transparent;
