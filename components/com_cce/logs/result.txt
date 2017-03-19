@@ -1,0 +1,27 @@
+This file contains the result (log) of last operation
+
+FET command line simulation started on 7/24/15 12:28 AM
+
+Unrecognized option: --help
+
+Incorrect command line parameters (Input file not specified).
+
+Command line usage: "fet --inputfile=x [--outputdir=d] [--timelimitseconds=y] [--htmllevel=z] [--language=t] [--printnotavailable=u] [--printbreak=b] [--dividetimeaxisbydays=v] [--printsimultaneousactivities=w] [--randomseedx=rx --randomseedy=ry] [--warnifusingnotperfectconstraints=s] [--warnifusingstudentsminhoursdailywithallowemptydays=p]",
+where:
+x is the input file, for instance "data.fet"
+d is the path to results directory, without trailing slash or backslash (default is current working path). Make sure you have write permissions there.
+y is integer (seconds) (default 2000000000, which is practically infinite).
+z is integer from 0 to 6 and represents the detail level for the generated html timetables (default 2, larger values have more details/facilities and larger file sizes).
+t is one of en_US, ar, ca, da, de, el, es, fa, fr, gl, he, hu, id, it, lt, mk, ms, nl, pl, pt_BR, ro, ru, si, sk, sr, tr, uk (default en_US).
+u is either "true" or "false" and represents if you want -x- (for true) or --- (for false) in the generated timetables for the not available slots (default true).
+b is either "true" or "false" and represents if you want -X- (for true) or --- (for false) in the generated timetables for the break slots (default true).
+v is either true or false, represents if you want html timetables with time-axis divided by days (default false).
+w is either true or false, represents if you want html timetables to show related activities which have constraints with same starting time (default false).
+(for instance, if A1 (T1, G1) and A2 (T2, G2) have constraint activities same starting time, then in T1's timetable will appear also A2, at the same slot as A1).
+rx is the random seed X component, minimum 1 to maximum 2147483646, ry is the random seed Y component, minimum 1 to maximum 2147483398 (you can get the same timetable if the input file is identical, if the FET version is the same and if the random seed X and Y components are the same).
+s is either true or false, represents whether you want a message box to be shown, with a warning, if the input file contains not perfect constraints (activity tag max hours daily or students max gaps per day) (default true).
+p is either true or false, represents whether you want a message box to be shown, with a warning, if the input file contains non standard constraints students min hours daily with allow empty days (default true).
+
+Alternatively, you can run "fet --version [--outputdir=d]" to get the current FET version. where:
+d is the path to results directory, without trailing slash or backslash (default is current working path). Make sure you have write permissions there.
+(If you specify the "--version" argument, FET just prints version number on the command line prompt and in the output directory and exits.)

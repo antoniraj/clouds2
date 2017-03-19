@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout
+		title="CCE-Groups" option="com_cce_groups">
+		<help
+			key="JHELP_MENUS_MENU_ITEM_CCE_GROUPS"
+		/>
+		<message>
+			<![CDATA[com_cce_groups_view_default_desc]]>
+		</message>
+	</layout>
+        <fields name="request">
+                <fieldset name="request">
+                        <field
+                                name="controller"
+                                type="list"
+                                label="Controller"
+                                description="List of Controllers"
+                                default="groups"
+                        >
+                                <option value="groups">Groups</option>
+                                <option value="groupmembership">Membership</option>
+                        </field>
+                </fieldset>
+        </fields>
+
+</metadata>

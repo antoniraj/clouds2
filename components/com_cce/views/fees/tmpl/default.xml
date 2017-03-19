@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout
+		title="CCE-Fees1" option="com_cce_fees1">
+		<help
+			key="JHELP_MENUS_MENU_ITEM_CCE_FEES1"
+		/>
+		<message>
+			<![CDATA[com_cce_fees1_view_default_desc]]>
+		</message>
+	</layout>
+        <fields name="request">
+                <fieldset name="request">
+                        <field
+                                name="controller"
+                                type="list"
+                                label="Controller"
+                                description="List of Controllers"
+                                default="fees"
+                        >
+                                <option value="fees">Fees</option>
+                        </field>
+                        <field
+                                name="view"
+                                type="list"
+                                label="View"
+                                description="List of Views"
+                                default="fees"
+                        >
+                                <option value="fees">Fees</option>
+                        </field>
+                        <field
+                                name="layout"
+                                type="list"
+                                label="Layout"
+                                description="List of Layouts"
+                                default="feeaccounts"
+                        >
+                                <option value="feeaccounts">Define Fee Accounts</option>
+                                <option value="feeheads">Define Fee Heads</option>
+                                <option value="feecategory">Define Fee Structure</option>
+                                <option value="feestructure">Fee Structure</option>
+                                <option value="feeconcession">Fee Concession</option>
+                                <option value="discounts">Fee Discount</option>
+                                <option value="feeschedule">Fee Schedule</option>
+                                <option value="feecollection">Fee Collection</option>
+                                <option value="instantcollection">Instant Collection</option>
+                                <option value="dailycollection">Daily Collection</option>
+                                <option value="reportclasswiseexpected">Fee Expected</option>
+                                <option value="pendingpayment">Fee Collected</option>
+                                <option value="classwisereport">Classwise Report</option>
+                                <option value="concessionlist">Concession List</option>
+                                <option value="feeduelist">Due List</option>
+                                <option value="datewisereport">Datewise fee collection</option>
+                        </field>
+                </fieldset>
+        </fields>
+
+</metadata>

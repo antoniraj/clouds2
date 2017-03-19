@@ -1,0 +1,5 @@
+This file contains the result (log) of last operation
+
+FET command line simulation started on 7/24/15 12:44 AM
+
+fet: critical error - you don't have write permissions in the output directory - (FET cannot open or create file /home/maradnus/public_html/teresa.com/addon//timetables/tt/test_write_permissions_2.tmp). If this is a bug - please report it.

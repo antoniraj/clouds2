@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout
+		title="CCE-BULKSMSREPORT" option="com_cce_bulksmsreport">
+		<help
+			key="JHELP_MENUS_MENU_ITEM_CCE_BULKSMSREPORT"
+		/>
+		<message>
+			<![CDATA[com_cce_bulksmsreport_view_default_desc]]>
+		</message>
+	</layout>
+        <fields name="request">
+                <fieldset name="request">
+                        <field
+                                name="controller"
+                                type="list"
+                                label="Controller"
+                                description="List of Controllers"
+                                default="sms"
+                        >
+                                <option value="sms">SMS</option>
+                        </field>
+			 <field
+                                name="view"
+                                type="list"
+                                label="Views"
+                                description="List of Views"
+                                default="sms"
+                        >
+                                <option value="sms">SMS</option>
+                        </field>
+			<field
+                                name="task"
+                                type="list"
+                                label="Task"
+                                description="List of Tasks"
+                                default="smsqueue"
+                        >
+                                <option value="smsqueue">SMS Queue</option>
+                        </field>
+
+			<field
+                                name="layout"
+                                type="list"
+                                label="Layout"
+                                description="List of Layouts"
+                                default="bulksmsreport"
+                        >
+                                <option value="bulksmsreport">Report</option>
+                        </field>
+
+                </fieldset>
+        </fields>
+
+</metadata>

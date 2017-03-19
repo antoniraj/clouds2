@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout
+		title="CCE-AssignStaff" option="com_cce_assignstaffs">
+		<help
+			key="JHELP_MENUS_MENU_ITEM_CCE_STAFFS"
+		/>
+		<message>
+			<![CDATA[com_cce_assignstaff_view_default_desc]]>
+		</message>
+	</layout>
+        <fields name="request">
+                <fieldset name="request">
+                        <field
+                                name="controller"
+                                type="list"
+                                label="Views"
+                                description="List of Views"
+                                default="assignstaffs"
+                        >
+                                <option value="assignstaffs">AssignStaff</option>
+                        </field>
+                </fieldset>
+        </fields>
+
+</metadata>

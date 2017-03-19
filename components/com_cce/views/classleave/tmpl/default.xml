@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout
+		title="CCE-ClassLeave" option="com_cce_classleave">
+		<help
+			key="JHELP_MENUS_MENU_ITEM_CCE_CLASSLEAVE"
+		/>
+		<message>
+			<![CDATA[com_cce_classleave_view_default_desc]]>
+		</message>
+	</layout>
+    <fields name="request">
+                <fieldset name="request">
+                        <field
+                                name="controller"
+                                type="list"
+                                label="Controllers"
+                                description="List of Controllers"
+                                default="classleave"
+                        >
+                                <option value="classleave">ClassLeave</option>
+                        </field>
+ 			<field
+                                name="view"
+                                type="list"
+                                label="Views"
+                                description="List of Views"
+                                default="classleave"
+                        >
+                                <option value="classleave">ClassLeave</option>
+                        </field>
+			<field
+                                name="layout"
+                                type="list"
+                                label="Layout"
+                                description="List of Layout"
+                                default="classleave"
+                        >
+
+                                <option value="classleave">ClassLeave</option>
+                        </field>
+
+
+                </fieldset>
+        </fields>
+
+</metadata>

@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Students_Timetable>
+
+  <Subgroup name="X-A Automatic Group Automatic Subgroup">
+   <Day name="Mon">
+    <Hour name="P1">
+      <Teacher name="Sarita"></Teacher><Subject name="CHEM"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P2">
+      <Teacher name="Tabitha"></Teacher> <Teacher name="VIjaydurga"></Teacher> <Teacher name="Sarada"></Teacher><Subject name="SMK"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P3">
+      <Teacher name="Sailaxmi"></Teacher><Subject name="BIO"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P4">
+      <Teacher name="Padma"></Teacher><Subject name="SUPW"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P5">
+      <Teacher name="Rochelle"></Teacher><Subject name="ENG LIT"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P6">
+      <Teacher name="Pramodini"></Teacher><Subject name="2-T"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P7">
+      <Teacher name="Manjula"></Teacher><Subject name="LIB"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P8">
+      <Teacher name="PadmaKumar"></Teacher><Subject name="MAT"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+   </Day>
+   <Day name="Tue">
+    <Hour name="P1">
+      <Teacher name="Mary Sunit"></Teacher><Subject name="VE"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P2">
+      <Teacher name="PadmaKumar"></Teacher><Subject name="PHY"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P3">
+      <Teacher name="PadmaKumar"></Teacher><Subject name="MAT"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P4">
+      <Teacher name="Pramodini"></Teacher><Subject name="2-T"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P5">
+      <Teacher name="Jeffory"></Teacher> <Teacher name="Srilaxmi"></Teacher><Subject name="GS/SING"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P6">
+      <Teacher name="Madhuri"></Teacher><Subject name="HIS"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P7">
+      <Teacher name="Padmaja"></Teacher><Subject name="GEO"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P8">
+      <Teacher name="Sarita"></Teacher><Subject name="CHEM"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+   </Day>
+   <Day name="Wed">
+    <Hour name="P1">
+      <Teacher name="PadmaKumar"></Teacher><Subject name="MAT"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P2">
+      <Teacher name="Sharon"></Teacher><Subject name="ENG LAN"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P3">
+      <Teacher name="Madhuri"></Teacher><Subject name="HIS"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P4">
+      <Teacher name="Rochelle"></Teacher><Subject name="ENG LIT"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P5">
+      <Teacher name="Sailaxmi"></Teacher><Subject name="BIO"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P6">
+      <Teacher name="Pramodini"></Teacher><Subject name="2-T"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P7">
+      <Teacher name="PadmaKumar"></Teacher><Subject name="PHY"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P8">
+      <Teacher name="Sarita"></Teacher><Subject name="CHEM"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+   </Day>
+   <Day name="Thu">
+    <Hour name="P1">
+      <Teacher name="Rochelle"></Teacher><Subject name="ENG LIT"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P2">
+      <Teacher name="Tabitha"></Teacher> <Teacher name="VIjaydurga"></Teacher> <Teacher name="Sarada"></Teacher><Subject name="SMK"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P3">
+      <Teacher name="PadmaKumar"></Teacher><Subject name="MAT"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P4">
+      <Teacher name="Prakash"></Teacher> <Teacher name="Bhavani"></Teacher><Subject name="PT"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P5">
+      <Teacher name="Sharon"></Teacher><Subject name="ENG LAN"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P6">
+      <Teacher name="PadmaKumar"></Teacher><Subject name="PHY"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P7">
+      <Teacher name="Pramodini"></Teacher><Subject name="2-T"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P8">
+      <Teacher name="Madhuri"></Teacher><Subject name="HIS"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+   </Day>
+   <Day name="Fri">
+    <Hour name="P1">
+      <Teacher name="Prakash"></Teacher> <Teacher name="Bhavani"></Teacher><Subject name="MPT"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P2">
+      <Teacher name="PadmaKumar"></Teacher><Subject name="MAT"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P3">
+      <Teacher name="Sharon"></Teacher><Subject name="ENG LAN"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P4">
+      <Teacher name="Padmaja"></Teacher><Subject name="GEO"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P5">
+      <Teacher name="Sarasu"></Teacher><Subject name="ACT"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P6">
+      <Teacher name="PadmaKumar"></Teacher><Subject name="MAT"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P7">
+      <Teacher name="Rochelle"></Teacher><Subject name="ENG LIT"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P8">
+      <Teacher name="Pramodini"></Teacher><Subject name="2-T"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+   </Day>
+   <Day name="Sat">
+    <Hour name="P1">
+     
+    </Hour>
+    <Hour name="P2">
+      <Teacher name="Sharon"></Teacher><Subject name="ENG LAN"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P3">
+      <Teacher name="Padmaja"></Teacher><Subject name="GEO"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P4">
+      <Teacher name="Sailaxmi"></Teacher><Subject name="BIO"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P5">
+      <Teacher name="PadmaKumar"></Teacher><Subject name="MAT"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P6">
+      <Teacher name="Tabitha"></Teacher> <Teacher name="VIjaydurga"></Teacher> <Teacher name="Sarada"></Teacher><Subject name="SMK"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P7">
+     
+    </Hour>
+    <Hour name="P8">
+     
+    </Hour>
+   </Day>
+  </Subgroup>
+
+  <Subgroup name="X-B Automatic Group Automatic Subgroup">
+   <Day name="Mon">
+    <Hour name="P1">
+      <Teacher name="Madhuri"></Teacher><Subject name="HIS"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P2">
+      <Teacher name="Julien"></Teacher><Subject name="ENG LIT"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P3">
+      <Teacher name="Jyothi"></Teacher><Subject name="MAT"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P4">
+      <Teacher name="Bhavani"></Teacher> <Teacher name="Prakash"></Teacher><Subject name="MPT"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P5">
+      <Teacher name="Beena"></Teacher><Subject name="CHEM"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P6">
+      <Teacher name="Padma"></Teacher><Subject name="SUPW"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P7">
+      <Teacher name="Sujatha"></Teacher><Subject name="ENG LAN"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P8">
+      <Teacher name="Sarasu"></Teacher><Subject name="BIO"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+   </Day>
+   <Day name="Tue">
+    <Hour name="P1">
+      <Teacher name="Sujatha"></Teacher><Subject name="ENG LAN"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P2">
+      <Teacher name="Jyothi"></Teacher><Subject name="MAT"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P3">
+      <Teacher name="Beena"></Teacher><Subject name="CHEM"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P4">
+      <Teacher name="Julien"></Teacher><Subject name="ENG LIT"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P5">
+      <Teacher name="Jyothi"></Teacher><Subject name="MAT"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P6">
+      <Teacher name="Mohan"></Teacher><Subject name="PHY"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P7">
+      <Teacher name="Sarasu"></Teacher><Subject name="BIO"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P8">
+      <Teacher name="Amita"></Teacher><Subject name="2-H"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+   </Day>
+   <Day name="Wed">
+    <Hour name="P1">
+      <Teacher name="Bethesda"></Teacher><Subject name="ACT"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P2">
+      <Teacher name="Bhavani"></Teacher> <Teacher name="Prakash"></Teacher><Subject name="PT"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P3">
+      <Teacher name="Sujatha"></Teacher><Subject name="ENG LAN"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P4">
+      <Teacher name="Sarasu"></Teacher><Subject name="BIO"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P5">
+      <Teacher name="Jyothi"></Teacher><Subject name="MAT"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P6">
+      <Teacher name="Amita"></Teacher><Subject name="2-H"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P7">
+      <Teacher name="Vijaylaksh"></Teacher><Subject name="GEO"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P8">
+      <Teacher name="Sarada"></Teacher> <Teacher name="Tabitha"></Teacher> <Teacher name="VIjaydurga"></Teacher><Subject name="SMK"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+   </Day>
+   <Day name="Thu">
+    <Hour name="P1">
+      <Teacher name="Amita"></Teacher><Subject name="2-H"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P2">
+      <Teacher name="Jyothi"></Teacher><Subject name="MAT"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P3">
+      <Teacher name="Madhuri"></Teacher><Subject name="HIS"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P4">
+      <Teacher name="Beena"></Teacher><Subject name="CHEM"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P5">
+      <Teacher name="Sarada"></Teacher> <Teacher name="Tabitha"></Teacher> <Teacher name="VIjaydurga"></Teacher><Subject name="SMK"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P6">
+      <Teacher name="Vijaylaksh"></Teacher><Subject name="GEO"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P7">
+      <Teacher name="Mohan"></Teacher><Subject name="PHY"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P8">
+      <Teacher name="Julien"></Teacher><Subject name="ENG LIT"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+   </Day>
+   <Day name="Fri">
+    <Hour name="P1">
+      <Teacher name="Jyothi"></Teacher><Subject name="MAT"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P2">
+      <Teacher name="Julien"></Teacher><Subject name="ENG LIT"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P3">
+      <Teacher name="Sarasu"></Teacher><Subject name="VE"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P4">
+      <Teacher name="Sujatha"></Teacher><Subject name="ENG LAN"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P5">
+      <Teacher name="Vijaylaksh"></Teacher><Subject name="GEO"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P6">
+      <Teacher name="Amita"></Teacher><Subject name="2-H"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P7">
+      <Teacher name="Sarada"></Teacher> <Teacher name="Tabitha"></Teacher> <Teacher name="VIjaydurga"></Teacher><Subject name="SMK"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P8">
+      <Teacher name="Manjula"></Teacher><Subject name="LIB"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+   </Day>
+   <Day name="Sat">
+    <Hour name="P1">
+      <Teacher name="Amita"></Teacher><Subject name="2-H"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P2">
+      <Teacher name="Madhuri"></Teacher><Subject name="HIS"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P3">
+      <Teacher name="Jeffory"></Teacher> <Teacher name="Jyothi"></Teacher><Subject name="GS/SING"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P4">
+      <Teacher name="Mohan"></Teacher><Subject name="PHY"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P5">
+      <Teacher name="Jyothi"></Teacher><Subject name="MAT"></Subject><Activity_Tag name="Theory"></Activity_Tag>
+    </Hour>
+    <Hour name="P6">
+     
+    </Hour>
+    <Hour name="P7">
+     
+    </Hour>
+    <Hour name="P8">
+     
+    </Hour>
+   </Day>
+  </Subgroup>
+
+</Students_Timetable>

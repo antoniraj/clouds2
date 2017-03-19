@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout
+		title="CCE-MASTER" option="com_cce_student_master">
+		<help
+			key="JHELP_MENUS_MENU_ITEM_CCE_STUDENT_MASTER"
+		/>
+		<message>
+			<![CDATA[com_cce_student_master_view_default_desc]]>
+		</message>
+	</layout>
+        <fields name="request">
+                <fieldset name="request">
+                        <field
+                                name="controller"
+                                type="list"
+                                label="Controller"
+                                description="List of Controllers"
+                                default="master"
+                        >
+                                <option value="master"></option>
+                        </field>
+			 <field
+                                name="view"
+                                type="list"
+                                label="Views"
+                                description="List of Views"
+                                default="master"
+                        >
+                                <option value="master">Master</option>
+                        </field>
+			<field
+                                name="task"
+                                type="list"
+                                label="Task"
+                                description="List of Tasks"
+                                default="display"
+                        >
+                                <option value="display"></option>
+                        </field>
+
+			<field
+                                name="layout"
+                                type="list"
+                                label="Layout"
+                                description="List of Layouts"
+                                default="students"
+                        >
+                                <option value="dashboard">Dashboard</option>
+                                <option value="students">Students</option>
+                                <option value="staff">Staff</option>
+                                <option value="courses">Courses</option>
+                                <option value="sms">SMS</option>
+                                <option value="grades">Exams</option>
+                                <option value="fees">Fees</option>
+                                <option value="timetable">TimeTable</option>
+                        </field>
+
+                </fieldset>
+        </fields>
+
+</metadata>

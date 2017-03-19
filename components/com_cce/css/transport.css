@@ -1,0 +1,217 @@
+
+h1.report-item-page-title {color:black;}
+h2.report-item-page-title {color:black;}
+h3.report-item-page-title {color:black;}
+h4.report-item-page-title {color:black;}
+h5.report-item-page-title {color:black;}
+textarea.textarea { background: white;}
+h1.item-page-title {padding: 3px 0 3px 0px; margin-bottom: 1px; font-family: 'Cuprum', sans-serif;}
+h1.item-page-title a, .leading-0 a {color:#545c6b; font-size: 34px;font-weight:normal; font-family: 'Cuprum', sans-serif;}
+h1.item-page-title a:hover, .leading-0 a:hover{color:#c4c4c4; text-decoration: underline;}
+h2.item-page-title {padding: 3px 0 3px 0px; margin-bottom: 1px; font-family: 'Cuprum', sans-serif;}
+h2.item-page-title a, .leading-0 a {color:#045c6b; font-size: 25px;font-weight:normal; font-family: 'Cuprum', sans-serif;}
+h2.item-page-title a:hover, .leading-0 a:hover{color:#552244; text-decoration: underline;}
+h3.item-page-title {padding: 3px 0 3px 0px; margin-bottom: 1px; font-family: 'Cuprum', sans-serif;}
+h3.item-page-title a, .leading-0 a {color:#545c6b; font-size: 16px;font-weight:normal; font-family: 'Cuprum', sans-serif;}
+h3.item-page-title a:hover, .leading-0 a:hover{color:#c4c4c4; text-decoration: underline;}
+h4.item-page-title {padding: 3px 0 3px 0px; margin-bottom: 1px; font-family: 'Cuprum', sans-serif;}
+h4.item-page-title a, .leading-0 a {color:#545c6b; font-size: 10px;font-weight:normal; font-family: 'Cuprum', sans-serif;}
+h4.item-page-title a:hover, .leading-0 a:hover{color:#c4c4c4; text-decoration: underline;}
+table.formtable { width:100%;}
+tr.report {border-color: black; }
+td.report {border-color: black; color:black; }
+tr,th,td {background: transparent;border: 1px solid #e1e1e1;font-style: inherit;font-weight: inherit;margin: 0;padding-left: 7px;outline: 0;vertical-align: baseline; height:20px;} 
+th.list-title2 { background:#122f52 url(../images/h3.png) 0 0 repeat-x; padding:4px; border:1px solid #fff; color:#fff; text-align:center;}
+th.report-list-title { background:grey url(../images/h31.png) 0 0 repeat-x; padding:4px; border:1px solid black; color:black; text-align:center;}
+input.button_add {
+    background-image: url(../../../components/com_cce/images/16x16/add.png); /* 16px x 16px */
+    background-color: #122f52; /*transparent;*/
+    color: #fff; /*transparent;*/
+    background-repeat: no-repeat;
+    background-position: 3px 4px; /* equivalent to 'top left' */
+    border: none;           /* assuming we don't want any borders */
+    cursor: pointer;        /* make the cursor like hovering over an <a> element */
+    height: 25px;
+    width: 73px;
+    padding-left: 16px;     /* make text start to the right of the image */
+    vertical-align: middle; /* align the text vertically centered */
+}
+
+input.button_edit {
+    background-image: url(../../../components/com_cce/images/16x16/edit.png); /* 16px x 16px */
+    background-color: #122f52; /*transparent;*/
+    color: #fff; /*transparent;*/
+    background-repeat: no-repeat;
+    background-position: 3px 4px; /* equivalent to 'top left' */
+    border: none;           /* assuming we don't want any borders */
+    cursor: pointer;        /* make the cursor like hovering over an <a> element */
+    height: 25px;
+    width: 73px;
+    padding-left: 16px;     /* make text start to the right of the image */
+    vertical-align: middle; /* align the text vertically centered */
+}
+
+input.button_delete {
+    background-image: url(../../../components/com_cce/images/16x16/delete.png); /* 16px x 16px */
+
+.header-title{
+	background:9fc4e3;
+	width:100%;
+	border-radius:5px;
+	color:#FFF;
+}
+.enterfee{
+	margin:0px 0px 0px 200px;
+	border:none;
+	}
+.enterfee .first{
+		float:left;
+		margin-top:50px;		
+		width:300px;
+		}
+.enterfee .first table tr:nth-child(odd){
+	background:#f9f3f3;
+		color:#105fb0;
+		}
+
+.enterfee .first table tr td:nth-child(odd){
+		color:#ba5411;
+		height:40px;
+		}
+.enterfee .second{
+		margin-left:20px;
+		margin-top:50px;	
+		width:300px;
+		border:none;
+		float:left;
+		}
+
+.enterfee .second table tr:nth-child(odd){
+		background:#f9f3f3;
+		color:#105fb0;
+		}
+.enterfee .second table tr td:nth-child(odd){
+		color:#ba5411;
+		height:40px;
+		}
+.enterfee .second .submit{
+		margin:50px 0 0 300px;
+		}
+.enterfee .third{		
+		margin-top:20px;
+		width:300px;
+		height:30px;
+		margin-bottom:100px;
+		}
+
+
+.payfee{
+	margin:0px 0px 0px 10px;
+	border:none;
+	}
+.payfee .first{
+		float:left;
+		margin-top:50px;		.payfee{
+	margin:0px 0px 0px 10px;
+	border:none;
+	}
+.payfee .first{
+		float:left;
+		margin-top:50px;		
+		width:300px;
+		}
+.payfee .first table tr:nth-child(odd){
+	background:#f9f3f3;
+		color:#105fb0;
+		}
+
+.payfee .first table tr td:nth-child(odd){
+		color:#ba5411;
+		height:40px;
+		}
+.payfee .second{
+		margin-left:20px;
+		margin-top:50px;	
+		width:300px;
+		border:none;
+		float:left;
+		}
+
+.payfee .second table tr:nth-child(odd){
+		background:#f9f3f3;
+		color:#105fb0;
+		}
+.payfee .second table tr td:nth-child(odd){
+		color:#ba5411;
+		height:40px;
+		}
+.payfee .second .submit{
+		margin:50px 0 0 300px;
+		}
+.payfee .third{		
+		margin-top:20px;
+		width:300px;
+		height:30px;
+		margin-bottom:100px;
+		}
+		width:300px;
+		}
+.payfee .first table tr:nth-child(odd){
+	background:#f9f3f3;
+		color:#105fb0;
+		}
+
+.payfee .first table tr td:nth-child(odd){
+		color:#ba5411;
+		height:40px;
+		}
+.payfee .second{
+		margin-left:20px;
+		margin-top:50px;	
+		width:300px;
+		border:none;
+		float:left;
+		}
+
+.payfee .second table tr:nth-child(odd){
+		background:#f9f3f3;
+		color:#105fb0;
+		}
+.payfee .second table tr td:nth-child(odd){
+		color:#ba5411;
+		height:40px;
+		}
+.payfee .second .submit{
+		margin:50px 0 0 300px;
+		}
+.payfee .third{		
+		margin-top:20px;
+		width:300px;
+		height:30px;
+		margin-bottom:100px;
+		}
+#printheader{
+			width:600px;
+			margin:0;
+			padding:0;
+		}
+#printheader #logo{
+			
+					height:100px;
+					margin-left:10px;
+					width:width:600px;
+			}
+table th{
+		border:none;
+		}
+table{
+	border:none;
+	}
+table tr{
+		border:none;
+		height:30px;
+		line-height:30px;
+		}
+table tr td{
+		border:none;
+		}

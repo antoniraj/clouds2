@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout
+		title="CCE-INS-TimeTable" option="com_cce_ins-timetable">
+		<help
+			key="JHELP_MENUS_MENU_ITEM_CCE_INS-TIMETABLE"
+		/>
+		<message>
+			<![CDATA[com_cce_ins-timetable_view_default_desc]]>
+		</message>
+	</layout>
+        <fields name="request">
+                <fieldset name="request">
+                        <field
+                                name="controller"
+                                type="list"
+                                label="Controller"
+                                description="List of Controllers"
+                                default="timetable"
+                        >
+                                <option value="timetable">Time Table</option>
+                        </field>
+                        <field
+                                name="view"
+                                type="list"
+                                label="Views"
+                                description="List of Views"
+                                default="timetable"
+                        >
+                                <option value="timetable">Time Table</option>
+                        </field>
+                </fieldset>
+        </fields>
+
+</metadata>

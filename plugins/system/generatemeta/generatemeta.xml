@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.2" type="plugin" group="system">
+    <name>System - JO GeneratorMeta</name>
+    <author>Omera</author>
+    <creationDate>Dec 2013</creationDate>
+    <copyright>Copyright (C) 2013 Omera.Net</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorUrl>http://joomla.omera.com</authorUrl>
+    <version>1.0</version>
+    <description>JO_GM_XML_DESCRIPTION</description>
+	
+    <files>
+        <filename plugin="generatemeta">generatemeta.php</filename>
+        <filename>index.html</filename>
+        <folder>images</folder>
+    </files>
+	
+	<languages>
+		<language tag="tr-TR">tr-TR.plg_system_generatemeta.ini</language>
+		<language tag="en-GB">en-GB.plg_system_generatemeta.ini</language>
+	</languages>
+		
+    <config>
+		<fields name="params">
+			<fieldset name="FRONTPAGE">
+				<field name="FrontPageDis" type="radio" class="btn-group" default="0" label="JO_GM_FP_DISABLE_LBL" description="JO_GM_FP_DISABLE_LBL_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="FrontPageTitle" type="text" size="40" default="HOME" label="JO_GM_OPTIONAL_FRONT_PAGE_TITLE" description="JO_GM_OPTIONAL_FRONT_PAGE_DESC"/>
+				<field name="FrontPageTitleOrder" type="list" default="0" label="JO_GM_FRONT_PAGE_TITLE_LAYOUT" description="JO_GM_FRONT_PAGE_TITLE_LAYOUT_DESC">
+						<option value="0">JO_GM_OPTIONAL_FP_TITLE_SITE_TITLE</option>
+						<option value="1">JO_GM_SITE_TITLE_OPTIONAL_FP_TITLE</option>
+						<option value="2">JO_GM_OPTIONAL_FP_TITLE</option>
+						<option value="3">JO_GM_SITE_TITLE</option>
+				</field>
+				<field name="TitleOrder" type="list" default="0" label="JO_GM_TITLE_LAYOUT" description="JO_GM_TITLE_LAYOUT_DESC">
+						<option value="0">JO_GM_PAGE_TITLE_SITE_TITLE</option>
+						<option value="1">JO_GM_SITE_TITLE_PAGE_TITLE</option>
+						<option value="2">JO_GM_PAGE_TITLE</option>
+				</field>		
+				<field name="Separator" type="text" size="1" default="|" label="JO_GM_SEPARATOR" description="JO_GM_SEPARATOR_DESC"/>	
+				<field name="CatTitle" type="radio" class="btn-group" default="0" label="JO_GM_REPLACE_SITE_NAME_WITH_CATEGORY_TITLE" description="JO_GM_REPLACE_SITE_NAME_WITH_CATEGORY_TITLE_DESC">
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+				</field>
+				<field name="MaxChar" type="text" size="5" default="500" label="JO_GM_ARTICLE_TEXT_CHARACTERS_PROCESSED" description="JO_GM_ARTICLE_TEXT_CHARACTERS_PROCESSED_DESC"/>
+			  </fieldset>
+			  <fieldset name="PARAMS">
+				<field name="DescLength" type="text" size="5" default="200" label="JO_GM_METADESC_LENGTH" description="JO_GM_METADESC_LENGTH_DESC"/> 		
+				<field name="BlackWord" type="textarea" label="JO_GM_BLACKWORDS" rows="10" cols="20" default="" description="JO_GM_BLACKWORDS_DESC"/>
+				<field name="GoldWord" type="textarea" label="JO_GM_GOLDWORDS" rows="10" cols="20" default="" description="JO_GM_GOLDWORDS_DESC"/>
+				<field name="MinLength" type="text" label="JO_GM_KEYS_MINIMUM_LENGTH" default="5" description="JO_GM_KEYS_MINIMUM_LENGTH_DESC"/>
+				<field name="MaxWords" type="text" label="JO_GM_MAX_NUMBER_OF_KEYWORDS" default="20" description="JO_GM_MAX_NUMBER_OF_KEYWORDS_DESC"/>
+				<field name="UseC" type="radio" class="btn-group" default="1" label="JO_GM_USE_CANONICAL_META_TAG" description="JO_GM_USE_CANONICAL_META_TAG_DESC">
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+				</field>
+				<field name="Domain" type="text" label="JO_GM_SITE_DOMAIN" default="http://www.example.com" description="JO_GM_SITE_DOMAIN_DESC"/>
+			</fieldset>
+		</fields>
+    </config>
+</extension>

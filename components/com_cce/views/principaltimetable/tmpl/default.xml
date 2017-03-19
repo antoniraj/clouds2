@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout
+		title="CCE-TimeTable" option="com_cce_timetable">
+		<help
+			key="JHELP_MENUS_MENU_ITEM_CCE_TIMETABLE"
+		/>
+		<message>
+			<![CDATA[com_cce_timetable_view_default_desc]]>
+		</message>
+	</layout>
+        <fields name="request">
+                <fieldset name="request">
+                        <field
+                                name="controller"
+                                type="list"
+                                label="Controller"
+                                description="List of Controllers"
+                                default="timetable"
+                        >
+                                <option value="timetable">Time Table</option>
+                        </field>
+                        <field
+                                name="view"
+                                type="list"
+                                label="View"
+                                description="List of Views"
+                                default="timetable"
+                        >
+                                <option value="timetable">Time Table</option>
+                        </field>
+                        <field
+                                name="layout"
+                                type="list"
+                                label="Layout"
+                                description="List of Layouts"
+                                default="timetable"
+                        >
+                                <option value="timetable">Time Table</option>
+                                <option value="rinstitutetimetable">R-Institute</option>
+                                <option value="institutetimetable">Institute</option>
+                                <option value="teachertimetable">Teacher</option>
+                                <option value="classtimetable">Class</option>
+                        </field>
+                </fieldset>
+        </fields>
+
+</metadata>

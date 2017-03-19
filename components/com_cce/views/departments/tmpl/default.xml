@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout
+		title="CCE-DEP" option="com_cce_departments">
+		<help
+			key="JHELP_MENUS_MENU_ITEM_CCE_DEPARTMENTS"
+		/>
+		<message>
+			<![CDATA[com_cce_departments_view_default_desc]]>
+		</message>
+	</layout>
+    <fields name="request">
+                <fieldset name="request">
+                        <field
+                                name="controller"
+                                type="list"
+                                label="Views"
+                                description="List of Views"
+                                default="departments"
+                        >
+                                <option value="departments">Departments</option>
+                        </field>
+                        <field
+                                name="task"
+                                type="list"
+                                label="tasks"
+                                description="List of tasks"
+                                default="departmentcourses"
+                        >
+                                <option value="departmentcourses">Departments Courses</option>
+                        </field>
+                        <field
+                                name="layout"
+                                type="list"
+                                label="layouts"
+                                description="List of Layouts"
+                                default="departments"
+                        >
+                                <option value="departments">Departments</option>
+                                <option value="departmentcourses">Departments Courses</option>
+                        </field>
+                </fieldset>
+        </fields>
+
+</metadata>

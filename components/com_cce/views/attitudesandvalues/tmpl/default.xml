@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout
+		title="CCE-AttitudesAndValues" option="com_cce_AttitudesAndValues">
+		<help
+			key="JHELP_MENUS_MENU_ITEM_CCE_AttitudesAndValues"
+		/>
+		<message>
+			<![CDATA[com_cce_attitudesandvalues_view_default_desc]]>
+		</message>
+	</layout>
+       <fields name="request">
+                <fieldset name="request">
+                        <field
+                                name="controller"
+                                type="list"
+                                label="Views"
+                                description="List of Views"
+                                default="attitudesandvalues"
+                        >
+                                <option value="attitudesandvalues">Attitudes and Values</option>
+                        </field>
+                </fieldset>
+        </fields>
+</metadata>

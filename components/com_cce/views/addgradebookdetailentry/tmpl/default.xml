@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout
+		title="CCE-AddGradeBookDetailEntry" option="com_cce_add_gradebookdetailentry">
+		<help
+			key="JHELP_MENUS_MENU_ITEM_CCE_Add_GRADEBOOKDETAILENTRY"
+		/>
+		<message>
+			<![CDATA[com_cce_add_GradeBookDetailEntry_view_default_desc]]>
+		</message>
+	</layout>
+    <fields name="request">
+                <fieldset name="request">
+                        <field
+                                name="controller"
+                                type="list"
+                                label="Views"
+                                description="List of Views"
+                                default="gradebookdetailentry"
+                        >
+                                <option value="gradebookdetailentry">GradeBookDetailEntry</option>
+                        </field>
+                </fieldset>
+        </fields>
+
+</metadata>

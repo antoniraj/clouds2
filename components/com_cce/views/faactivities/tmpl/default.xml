@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout
+		title="CCE-FA-ACTIVITIES" option="com_cce_faactivities">
+		<help
+			key="JHELP_MENUS_MENU_ITEM_CCE_FA-ACT"
+		/>
+		<message>
+			<![CDATA[com_cce_faactivities_view_default_desc]]>
+		</message>
+	</layout>
+       <fields name="request">
+                <fieldset name="request">
+                        <field
+                                name="controller"
+                                type="list"
+                                label="Views"
+                                description="List of Views"
+                                default="faactivities"
+                        >
+                                <option value="faactivities">FA Activities</option>
+                        </field>
+                </fieldset>
+        </fields>
+</metadata>

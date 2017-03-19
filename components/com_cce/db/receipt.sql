@@ -1,0 +1,10 @@
+CREATE TABLE ya_feereceipt(
+	`id`		INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+	`fcid`		INTEGER UNSIGNED NOT NULL,
+	`studentid`	INTEGER UNSIGNED NOT NULL,
+	`courseid`	INTEGER UNSIGNED NOT NULL,
+	`gid`		INTEGER UNSIGNED NOT NULL,
+	UNIQUE(`fcid`,`studentid`,`courseid`,`gid`),
+	`cdate` 	DATE NOT NULL,
+	PRIMARY KEY (`id`)
+)ENGINE=InnoDB AUTO_INCREMENT=1;

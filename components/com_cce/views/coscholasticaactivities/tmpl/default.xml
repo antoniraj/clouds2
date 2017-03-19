@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout
+		title="CCE-CO-SCHOLASTIC-A-ACTIVITIES" option="com_cce_coscholasticaactivities">
+		<help
+			key="JHELP_MENUS_MENU_ITEM_CCE_COSCHOLASTICA_ACT"
+		/>
+		<message>
+			<![CDATA[com_cce_coscholasticaactivities_view_default_desc]]>
+		</message>
+	</layout>
+       <fields name="request">
+                <fieldset name="request">
+                        <field
+                                name="controller"
+                                type="list"
+                                label="Views"
+                                description="List of Views"
+                                default="coscholasticaactivities"
+                        >
+                                <option value="coscholasticaactivities">Co-Scholastic-A Activities</option>
+                        </field>
+                </fieldset>
+        </fields>
+</metadata>

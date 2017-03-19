@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout
+		title="CCE-BatchStaffSMS" option="com_cce_batchstaffsms">
+		<help
+			key="JHELP_MENUS_MENU_ITEM_CCE_BATCHSTUDENTSMS"
+		/>
+		<message>
+			<![CDATA[com_cce_batchstaffsms_view_default_desc]]>
+		</message>
+	</layout>
+    <fields name="request">
+                <fieldset name="request">
+                        <field
+                                name="controller"
+                                type="list"
+                                label="Views"
+                                description="List of Controllers"
+                                default="sms"
+                        >
+                                <option value="sms">SMS</option>
+                        </field>
+			<field
+                                name="view"
+                                type="list"
+                                label="Views"
+                                description="List of Views"
+                                default="sms"
+                        >
+                                <option value="sms">SMS</option>
+                        </field>
+			<field
+	                        name="layout"
+                                type="list"
+                                label="Layout"
+                                description="List of Layouts"
+                                default="batchstaffsms"
+                        >
+                                <option value="batchstaffsms">BatchStaffSMS</option>
+                        </field>
+
+			<field
+                                name="task"
+                                type="list"
+                                label="Task"
+                                description="List of Tasks"
+                                default="displaystaff"
+                        >
+                                <option value="displaystaff">displaystaff</option>
+                        </field>
+
+                </fieldset>
+        </fields>
+
+</metadata>

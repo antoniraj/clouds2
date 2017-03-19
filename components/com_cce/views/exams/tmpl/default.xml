@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout
+		title="CCE-Exams" option="com_cce_exams">
+		<help
+			key="JHELP_MENUS_MENU_ITEM_CCE_EXAMS"
+		/>
+		<message>
+			<![CDATA[com_cce_fees1_view_default_desc]]>
+		</message>
+	</layout>
+        <fields name="request">
+                <fieldset name="request">
+                        <field
+                                name="controller"
+                                type="list"
+                                label="Controller"
+                                description="List of Controllers"
+                                default="exams"
+                        >
+                                <option value="exams">Examination</option>
+                        </field>
+                        <field
+                                name="view"
+                                type="list"
+                                label="View"
+                                description="List of Views"
+                                default="exams"
+                        >
+                                <option value="exams">Examination</option>
+                        </field>
+                        <field
+                                name="layout"
+                                type="list"
+                                label="Layout"
+                                description="List of Layouts"
+                                default="coursebooks"
+                        >
+                                <option value="gradebooks">Grade Books</option>
+                                <option value="gradingsystems">Grading Systems</option>
+                                <option value="coursebooks">Course Books</option>
+                                <option value="showcoursegradebook">Course Grade Book</option>
+                                <option value="showstudentsgradebook">Students Grade Book</option>
+                        </field>
+                </fieldset>
+        </fields>
+
+</metadata>

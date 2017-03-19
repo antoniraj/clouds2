@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+    <name>Reminders</name>
+    <author>Sundaram</author>
+    <version>1.5.0</version>
+    <description>Lists Reminders</description>
+    <files>
+        <filename>mod_reminders.xml</filename>
+        <filename module="mod_reminders">mod_reminders.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <params>
+    </params>
+</install>
+

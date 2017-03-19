@@ -1,0 +1,187 @@
+<?php
+        defined('_JEXEC') OR DIE('Access denied..');
+        $app = JFactory::getApplication();
+	$iconsDir = JURI::base() . 'components/com_cce/images/64x64';
+	JHTML::script('validate.js', 'components/com_cce/js/');
+	$Itemid = JRequest::getVar('Itemid');
+	$courseid= JRequest::getVar('courseid');
+	$model = & $this->getModel('classattendance');
+	$model1 = & $this->getModel('classleave');
+	$courses=$model->getCurrentCourses();
+	$fdate = JRequest::getVar('fdate');
+	$tdate = JRequest::getVar('tdate');
+	if(!$fdate) $fdate=date('d-m-Y');
+	if(!$tdate) $tdate=date('d-m-Y');
+	$r=$model->getCourse($courseid,$rec);
+	$students = $model->getStudents($courseid);
+	$iconsDir1 = JURI::base() . 'components/com_cce/images';
+        $dashboardlink= JRoute::_('index.php?option='.JRequest::getVar('option').'&controller=master&view=master&task=display&layout=dashboard&Itemid='.$dashboardItemid);
+        $modulelink= JRoute::_('index.php?option='.JRequest::getVar('option').'&controller=master&view=master&task=display&layout=attendance&Itemid='.$masterItemid);
+		
+?>
+
+<table width="100%" cellpadding="1">
+        <tr style="border:none;">
+                <td style="border:none;" align="left">
+        <div style="float:left;">
+           <img src="<?php echo $iconsDir.'/staffleave.png'; ?>" alt="" style="width: 64px; height: 64px;" />
+        </div>
+        <div style="float:left;">
+                <div>&nbsp;</div>
+                <h1 class="item-page-title">Class Attendance</h1>
+        </div>
+                       <div style="float:right;"> <a href="<?php echo $dashboardlink; ?>"><img src="<?php echo $iconsDir1.'/1dashboard.png'; ?>" alt="Dash Board" style="width: 48px; height: 48px;" /></a><br />
+                        </div>
+                        <div style="float:right; width:10px;"> &nbsp;</div>
+                        <div style="float:right;">
+                        <a href="<?php echo $modulelink; ?>"><img src="<?php echo $iconsDir1.'/1attendance.png'; ?>" alt="Master" style="width: 48px; height: 48px;" /></a><br />
+                        </div>
+                </td>
+        </tr>
+</table>
+
+<div class="row-fluid sortable">
+    <div class="box span12">
+        <div class="box-header well" data-original-title>
+            <h2><i class="icon-edit"></i> Class Attendance Report</h2>
+            <div class="box-icon">
+                 <a href="#" class="btn btn-setting btn-round"><i class="icon-cog"></i></a>
+                 <a href="#" class="btn btn-minimize btn-round"><i class="icon-chevron-up"></i></a>
+            </div>
+        </div>
+        <div class="box-content">
+            <form class="form-horizontal" action="<?php echo JRoute::_('index.php?option=com_cce'); ?>" method="POST" name="adminForm">
+              <div class="row-fluid">
+                   <div class="span4">
+                        <div class="control-group" >
+                            <label class="control-label" for="selectError">Select</label>
+                            <div class="controls">
+                                 <select id="selectError" data-rel="chosen" name="courseid">
+                                       <option value="">Select</option>
+                                       <?php
+                                           foreach($courses as $course) :
+                                              echo "<option value=\"".$course->id."\" ".($course->id == $courseid ? "selected=\"yes\"" : "").">".$course->code."</option>";
+                                           endforeach;
+                                       ?>
+                                 </select>
+                            </div>
+                        </div>
+                   </div>
+              </div>
+
+              <div class="row-fluid">
+                   <div class="span4">
+                        <div class="control-group">
+                             <label class="control-label" for="date01">From</label>
+                             <div class="controls">
+                                  <input type="text" class="datepicker" name="fdate" id="fdate" value="<?php echo JArrayHelper::indianDate($fdate); ?>">
+                             </div>
+                        </div>
+                   </div>
+                   <div class="span3">
+                        <div class="control-group">
+                             <label class="control-label" for="date01">To Date</label>
+                             <div class="controls">
+                                  <input type="text" class="datepicker" id="tdate" name="tdate" value="<?php echo JArrayHelper::indianDate($tdate); ?>">
+                             </div>
+                        </div>
+                   </div>
+              </div>
+              <div class="form-actions">
+                   <button class="btn btn-primary" name="go" value="Go"><i class="icon-plus-sign icon-white"></i> Go</button>
+              </div>
+              <input type="hidden" name="controller" value="attendancereports" >
+              <input type="hidden" name="view" value="attendancereports" >
+              <input type="hidden" name="layout" value="classattendance" >
+              <input type="hidden" name="task" value="go" >
+      	      <input type="hidden" name="Itemid" value="<?php echo $Itemid; ?>" >
+            </form>			
+        </div>
+    </div><!--/span-->
+</div><!--/row-->
+
+
+
+<br />
+<?php
+	
+	$f1date=JArrayHelper::mysqlformat($fdate);
+	$t1date=JArrayHelper::mysqlformat($tdate);
+	
+?>
+<div class="row-fluid sortable">
+				<div class="box span12">
+					<div class="box-header well" data-original-title>
+						<h2><i class="icon-edit"></i> Students Attendance Mark</h2>
+						<div class="box-icon">
+							<a href="#" class="btn btn-setting btn-round"><i class="icon-cog"></i></a>
+							<a href="#" class="btn btn-minimize btn-round"><i class="icon-chevron-up"></i></a>
+						</div>
+					</div>
+					<div class="box-content">
+<form action="<?php echo JRoute::_('index.php?option=com_cce'); ?>" method="POST" name="adminForm">
+<table width="100%" class="table table-striped table-bordered bootstrap-datatable datatable">
+  <thead>
+<tr><th class="sorting_disabled" width="5%"><input type="checkbox" onchange="check()" name="chk[]" /></th><th width="15%">RegNo</th><th width="35%">Name</th><th width="10%">Working Days</th><th width="10%">Absent</th><th width="10%">Leave</th><th width="10%">Attendance(%)</th></tr>
+</thead>
+<?php
+	$i=1;
+	$model1=&$this->getModel('classleave');
+	$r = $model->getTotalWorkingDays($f1date,$t1date,$wds);
+	$r = $model->getTotalHalfWorkingDays($f1date,$t1date,$hads);
+	foreach($students as $student){
+		$r=$model->getAbsentDays($f1date,$t1date,$student->id,$abs);
+		$r=$model1->getLeaveDays($f1date,$t1date,$student->id,$ls);
+		
+		$twds = $wds[0]['days'];
+		$thwds = $hads[0]['hdays'];
+		$tls = $ls[0]['ls'];
+		$tabs = $abs[0]['abs'];
+		$percent = round(((($twds+($thwds/2))-$tabs)/($twds+($thwds/2)))*100,2);
+		//$percent = round(((($twds+($thwds/2))-$tabs-$tls)/($twds+($thwds/2)))*100,2);
+		echo '<tr>';
+		echo '<td><input type="checkbox" name="cid[]" id="cid[]" value="'.$student->id.'" /></td>';
+		echo '<td>'.$student->registerno.'</td>';
+		echo '<td>'.$student->firstname.'</td>';
+		echo '<td>'.($twds+$thwds/2).'</td>';
+		echo '<td>'.round($tabs/2.0,1).'</td>';
+		echo '<td>'.round($tls/2.0,1).'</td>';
+		echo '<td>'.$percent.'</td>';
+		echo '</tr>';
+		$i++;
+	}
+?>
+</table>
+
+<table borde="0" width="100%" cellspacing="2" cellpadding="3">
+<tr><td>SMS Message:</td><td>
+<?php
+	$editor =& JFactory::getEditor();
+	$params = array( 'smilies'=> '0' ,
+		'style'  => '1' ,
+		'layer'  => '0' ,
+		'table'  => '0' ,
+		'clear_entities'=>'0'
+	);
+	echo $editor->display( 'smstext', $this->rec->smstext, '200', '200', '20', '20', false, null, null, null, $params );
+
+?>
+</td></tr>
+
+</table>
+<div class="form-actions">
+  <button type="submit" class="btn btn-primary" value="Send" name="send">Send</button>
+ 
+</div> 
+	
+<input type="hidden" name="controller" value="attendancereports" >
+<input type="hidden" name="view" value="attendancereports" >
+<input type="hidden" name="layout" value="classattendance" >
+<input type="hidden" name="task" value="sendsms" >
+<input type="hidden" name="Itemid" value="<?php echo $Itemid; ?>" >
+
+</form>
+					</div>
+				</div><!--/span-->
+			
+			</div><!--/row-->

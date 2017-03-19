@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout
+		title="CCE-CoSReports" option="com_cce_cosreports">
+		<help
+			key="JHELP_MENUS_MENU_ITEM_CCE_COSREPORTS"
+		/>
+		<message>
+			<![CDATA[com_cce_cosreports_view_default_desc]]>
+		</message>
+	</layout>
+    <fields name="request">
+                <fieldset name="request">
+                        <field
+                                name="controller"
+                                type="list"
+                                label="Controllers"
+                                description="List of Controllers"
+                                default="cosreports"
+                        >
+                                <option value="cosreports">CoSReports</option>
+                        </field>
+ 			<field
+                                name="view"
+                                type="list"
+                                label="Views"
+                                description="List of Views"
+                                default="cosreports"
+                        >
+                                <option value="cosreports">CoSReports</option>
+                        </field>
+			<field
+                                name="layout"
+                                type="list"
+                                label="Layout"
+                                description="List of Layout"
+                                default="cosreports"
+                        >
+                                <option value="cosreports">CoSReports</option>
+                        </field>
+
+
+                </fieldset>
+        </fields>
+
+</metadata>

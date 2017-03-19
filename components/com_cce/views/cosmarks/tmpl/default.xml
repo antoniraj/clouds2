@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout
+		title="CCE-CoSMarks" option="com_cce_cosmarks">
+		<help
+			key="JHELP_MENUS_MENU_ITEM_CCE_COSMARKS"
+		/>
+		<message>
+			<![CDATA[com_cce_cosmarks_view_default_desc]]>
+		</message>
+	</layout>
+    <fields name="request">
+                <fieldset name="request">
+                        <field
+                                name="controller"
+                                type="list"
+                                label="Controllers"
+                                description="List of Controllers"
+                                default="cosmarks"
+                        >
+                                <option value="cosmarks">CoSMarks</option>
+                        </field>
+ 			<field
+                                name="view"
+                                type="list"
+                                label="Views"
+                                description="List of Views"
+                                default="cosmarks"
+                        >
+                                <option value="cosmarks">CoSMarks</option>
+                        </field>
+			<field
+                                name="layout"
+                                type="list"
+                                label="Layout"
+                                description="List of Layout"
+                                default="lsmarks"
+                        >
+                                <option value="lsmarks">LSMarks</option>
+                                <option value="avmarks">AVMarks</option>
+                                <option value="cosamarks">CoSAMarks</option>
+                                <option value="cosbmarks">CoSBMarks</option>
+                        </field>
+
+
+                </fieldset>
+        </fields>
+
+</metadata>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout
+		title="CCE-OfficeDesk" option="com_cce_officedesk">
+		<help
+			key="JHELP_MENUS_MENU_ITEM_CCE_OfficeDesk"
+		/>
+		<message>
+			<![CDATA[com_cce_officedesk_view_default_desc]]>
+		</message>
+	</layout>
+        <fields name="request">
+                <fieldset name="request">
+                        <field
+                                name="controller"
+                                type="list"
+                                label="Controller"
+                                description="List of Controllers"
+                                default="officedesk"
+                        >
+                                <option value="officedesk">OfficeDesk</option>
+                        </field>
+                        <field
+                                name="views"
+                                type="list"
+                                label="View"
+                                description="List of Views"
+                                default="officedesk"
+                        >
+                                <option value="officedesk">OfficeDesk</option>
+                        </field>
+                        <field
+                                name="Layout"
+                                type="list"
+                                label="Layout"
+                                description="List of Layouts"
+                                default="default"
+                        >
+                                <option value="default">Default</option>
+                        </field>
+                </fieldset>
+        </fields>
+
+</metadata>

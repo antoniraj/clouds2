@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout
+		title="CCE-studentstc" option="com_cce_studentstc">
+		<help
+			key="JHELP_MENUS_MENU_ITEM_CCE_STUDENTS"
+		/>
+		<message>
+			<![CDATA[com_cce_students_view_default_desc]]>
+		</message>
+	</layout>
+    <fields name="request">
+                <fieldset name="request">
+                        <field
+                                name="controller"
+                                type="list"
+                                label="Views"
+                                description="List of Views"
+                                default="studentstc"
+                        >
+                                <option value="studentstc">Students Tc</option>
+                        </field>
+                </fieldset>
+        </fields>
+
+</metadata>

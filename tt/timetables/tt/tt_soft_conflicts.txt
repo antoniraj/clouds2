@@ -1,0 +1,11 @@
+﻿Soft conflicts of tt.fet
+Generated with FET 5.14.5 on 3/30/16 12:00 AM
+
+Total soft conflicts: 1.995
+
+Soft conflicts list (in decreasing order):
+
+Time constraint min days between activities broken: activity with id=29 (T:PadmaKumar, S:MAT, AT:Theory, St:X-A) conflicts with activity with id=26 (T:PadmaKumar, S:MAT, AT:Theory, St:X-A), being 1 days too close, on days Fri and Fri, conflicts factor increase=0.9975.
+Time constraint min days between activities broken: activity with id=80 (T:Jyothi, S:MAT, AT:Theory, St:X-B) conflicts with activity with id=75 (T:Jyothi, S:MAT, AT:Theory, St:X-B), being 1 days too close, on days Tue and Tue, conflicts factor increase=0.9975.
+
+End of file.

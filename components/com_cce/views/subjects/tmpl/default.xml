@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout
+		title="CCE-Subjects" option="com_cce_subjects">
+		<help
+			key="JHELP_MENUS_MENU_ITEM_CCE_SUBJECTS"
+		/>
+		<message>
+			<![CDATA[com_cce_subjects_view_default_desc]]>
+		</message>
+	</layout>
+    <fields name="request">
+                <fieldset name="request">
+                        <field
+                                name="controller"
+                                type="list"
+                                label="Controller"
+                                description="List of Controllers"
+                                default="subjects"
+                        >
+                                <option value="subjects">Subjects</option>
+                                <option value="managesubjects">Manage Subjects</option>
+                        </field>
+                        <field
+                                name="view"
+                                type="list"
+                                label="Views"
+                                description="List of Views"
+                                default="subjects"
+                        >
+                                <option value="subjects">Subjects</option>
+                                <option value="managesubjects">Manage Subjects</option>
+                        </field>
+                        <field
+                                name="layout"
+                                type="list"
+                                label="layouts"
+                                description="List of Layouts"
+                                default="list"
+                        >
+                                <option value="list">List</option>
+                        </field>
+                </fieldset>
+        </fields>
+
+</metadata>

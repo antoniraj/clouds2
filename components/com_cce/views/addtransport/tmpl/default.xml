@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout
+		title="CCE-Addtransport" option="com_cce_AddVehicledetails">
+		<help
+			key="JHELP_MENUS_MENU_ITEM_CCE_Add_AcademicTerms"
+		/>
+		<message>
+			<![CDATA[com_cce_add_acadmicTerm_view_default_desc]]>
+		</message>
+	</layout>
+    <fields name="request">
+                <fieldset name="request">
+                        <field
+                                name="controller"
+                                type="list"
+                                label="Views"
+                                description="List of Views"
+                                default="addtransport"
+                        >
+                                <option value="addtransport">Add Transport details</option>
+                        </field>
+                </fieldset>
+        </fields>
+
+</metadata>

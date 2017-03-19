@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout
+		title="CCE-Principal" option="com_cce_principal">
+		<help
+			key="JHELP_MENUS_MENU_ITEM_CCE_PRINCIPAL"
+		/>
+		<message>
+			<![CDATA[com_cce_principal_view_default_desc]]>
+		</message>
+	</layout>
+    <fields name="request">
+                <fieldset name="request">
+                        <field
+                                name="controller"
+                                type="list"
+                                label="Controllers"
+                                description="List of Controllers"
+                                default="Principal"
+                        >
+                                <option value="principal">Principal</option>
+                        </field>
+ 			<field
+                                name="view"
+                                type="list"
+                                label="Views"
+                                description="List of Views"
+                                default="principal"
+                        >
+                                <option value="principal">Principal</option>
+                        </field>
+			<field
+                                name="layout"
+                                type="list"
+                                label="Layout"
+                                description="List of Layout"
+                                default="deafult"
+                        >
+                                <option value="default">Default</option>
+                        </field>
+
+
+                </fieldset>
+        </fields>
+
+</metadata>

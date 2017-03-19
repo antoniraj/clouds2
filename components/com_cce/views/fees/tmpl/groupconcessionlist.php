@@ -1,0 +1,132 @@
+<?php
+        defined('_JEXEC') OR DIE('Access denied..');
+
+function formatInIndianStyle($num){
+     $pos = strpos((string)$num, ".");
+     if ($pos === false) {
+        $decimalpart="00";
+     }
+     if (!($pos === false)) {
+        $decimalpart= substr($num, $pos+1, 2); $num = substr($num,0,$pos);
+     }
+
+     if(strlen($num)>3 & strlen($num) <= 12){
+         $last3digits = substr($num, -3 );
+         $numexceptlastdigits = substr($num, 0, -3 );
+         $formatted = makeComma($numexceptlastdigits);
+         $stringtoreturn = $formatted.",".$last3digits.".".$decimalpart ;
+     }elseif(strlen($num)<=3){
+        $stringtoreturn = $num.".".$decimalpart ;
+     }elseif(strlen($num)>12){
+        $stringtoreturn = number_format($num, 2);
+     }
+
+     if(substr($stringtoreturn,0,2)=="-,"){
+        $stringtoreturn = "-".substr($stringtoreturn,2 );
+     }
+
+     return $stringtoreturn;
+ }
+
+ function makeComma($input){
+     if(strlen($input)<=2)
+     { return $input; }
+     $length=substr($input,0,strlen($input)-2);
+     $formatted_input = makeComma($length).",".substr($input,-2);
+     return $formatted_input;
+ }
+
+
+        $app = JFactory::getApplication();
+	$iconsDir = JURI::base() . 'components/com_cce/images/64x64';
+	JHtml::stylesheet('styles.css','./components/com_cce/css/');
+	JHTML::script('academicyear.js', 'components/com_cce/js/');
+	$Itemid = JRequest::getVar('Itemid');
+        $fromdate= JRequest::getVar('fromdate');
+	$iconsDir1 = JURI::base() . 'components/com_cce/images';
+
+	$a=explode('-',$fromdate);
+	$fdate=$a[2].'-'.$a[1].'-'.$a[0];
+
+   	$model = & $this->getModel('fees');
+	$recs= $model->getGroupConcessionList();
+
+	
+   	$dashboardItemid = $model->getMenuItemid('manageschool','Dash Board');
+   	if($dashboardItemid) ;
+   	else{
+        	$dashboardItemid = $model->getMenuItemid('topmenu','Manage School');
+   	}
+	$masterItemid = $model->getMenuItemid('manageschool','Fees');
+        if($masterItemid) ;
+        else{
+                $masterItemid = $model->getMenuItemid('topmenu','Manage School');
+        }
+   	$dashboardlink= JRoute::_('index.php?option='.JRequest::getVar('option').'&controller=master&view=master&task=display&layout=dashboard&Itemid='.$dashboardItemid);
+   	$modulelink= JRoute::_('index.php?option='.JRequest::getVar('option').'&controller=master&view=master&task=display&layout=fees&Itemid='.$masterItemid);
+
+	$app =& JFactory::getApplication();
+        $pathway =& $app->getPathway(); 
+        $pathway->addItem('Home', $dashboardlink);
+        $pathway->addItem('Fees',$modulelink);
+        $pathway->addItem('ConcessionList');
+	$link2= JRoute::_('index.php?option='.JRequest::getVar('option').'&controller=fees&view=fees&task=display&layout=concessionlist&Itemid='.$masterItemid);
+?>
+
+<b style="font: bold 15px Georgia, serif;">GROUP CONCESSION LIST</b>
+<div class="pull-right">
+	<a class="btn btn-mini btn-info" href="<?php echo $link2; ?>"><i class="icon-edit icon-white"></i>Regular Concession List</a>
+</div>				
+
+	<div class="row-fluid sortable">		
+		<div class="box span12">
+			<div class="box-content">
+				<table class="table table-striped table-bordered bootstrap-datatable datatable">
+				<thead>
+					<tr>
+						<th class="list-title" style="text-align:center;">SNO</th>
+						<th class="list-title" style="text-align:center;">STUDENT NAME</th>
+						<th class="list-title" style="text-align:center;">CLASS</th>
+						<th class="list-title" style="text-align:center;">FEEHEAD</th>
+						<th class="list-title" style="text-align:center;">AMOUNT</th>
+					</tr>
+				</thead>   
+				<tbody>
+<?php
+	setlocale(LC_MONETARY,"en_IN");
+	$i=1;
+	$sum=0;
+	foreach($recs as $rec) {
+		echo '<tr style="height:30px;">';
+		echo '<td>';
+		printf("%02d",$i++);
+		echo '</td>';
+		echo '<td>';
+		echo $rec->studentname;
+		echo '</td>';
+		echo '<td>';
+		echo $rec->groupname;
+		echo '</td>';
+		echo '<td>';
+		echo $rec->feetitle;
+		echo '</td>';
+		echo '<td style="text-align:right;">';
+		echo '<b style="font-family:Arial;"> &#8377;&nbsp;'.formatInIndianStyle($rec->amount).'</b>';
+		$sum=$sum+$rec->amount;
+		//echo '<b>'.money_format("%i",$rec->paidamount).'</b>';
+		echo '</td>';
+		echo '</tr>';	
+	}
+?>
+<tr>
+<td>00</td>
+<td style="text-align:right;"><b>TOTAL AMOUNT</b></td>
+<td></td>
+<td></td>
+<td style="text-align:right;font: bold 16px verdana, serif;font-family:Arial;"> <b>&#8377;&nbsp; <?php echo formatInIndianStyle($sum); ?> </b></td>
+</tr>
+</tbody>
+</table>            
+</div>
+</div><!--/span-->
+</div><!--/row-->

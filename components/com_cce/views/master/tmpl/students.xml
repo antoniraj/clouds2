@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout
+		title="CCE-STUDENT-MASTER" option="com_cce_student_master">
+		<help
+			key="JHELP_MENUS_MENU_ITEM_CCE_STUDENT_MASTER"
+		/>
+		<message>
+			<![CDATA[com_cce_student_master_view_default_desc]]>
+		</message>
+	</layout>
+        <fields name="request">
+                <fieldset name="request">
+                        <field
+                                name="controller"
+                                type="list"
+                                label="Controller"
+                                description="List of Controllers"
+                                default="master"
+                        >
+                                <option value="sms"></option>
+                        </field>
+			 <field
+                                name="view"
+                                type="list"
+                                label="Views"
+                                description="List of Views"
+                                default="students"
+                        >
+                                <option value="students">Students-master</option>
+                        </field>
+			<field
+                                name="task"
+                                type="list"
+                                label="Task"
+                                description="List of Tasks"
+                                default="studentsmslog"
+                        >
+                                <option value="studentsmslog">SMS Log</option>
+                        </field>
+
+			<field
+                                name="layout"
+                                type="list"
+                                label="Layout"
+                                description="List of Layouts"
+                                default="studentsmslog"
+                        >
+                                <option value="studentsmslog">SMS Log</option>
+                        </field>
+
+                </fieldset>
+        </fields>
+
+</metadata>

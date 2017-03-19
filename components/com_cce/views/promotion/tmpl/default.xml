@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout
+		title="CCE-Fees" option="com_cce_fees">
+		<help
+			key="JHELP_MENUS_MENU_ITEM_CCE_FEES"
+		/>
+		<message>
+			<![CDATA[com_cce_fees_view_default_desc]]>
+		</message>
+	</layout>
+        <fields name="request">
+                <fieldset name="request">
+                        <field
+                                name="controller"
+                                type="list"
+                                label="Controller"
+                                description="List of Controllers"
+                                default="fees"
+                        >
+                                <option value="fees">Fees</option>
+                        </field>
+                        <field
+                                name="view"
+                                type="list"
+                                label="View"
+                                description="List of Views"
+                                default="fees"
+                        >
+                                <option value="fees">Fees</option>
+                        </field>
+                        <field
+                                name="layout"
+                                type="list"
+                                label="Layout"
+                                description="List of Layouts"
+                                default="fees"
+                        >
+                                <option value="fees">Fees</option>
+                        </field>
+                </fieldset>
+        </fields>
+
+</metadata>

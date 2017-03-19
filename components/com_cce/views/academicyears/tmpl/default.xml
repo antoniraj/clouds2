@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout
+		title="CCE-AcademicYears" option="com_cce_academicyears">
+		<help
+			key="JHELP_MENUS_MENU_ITEM_CCE_AcademicYears"
+		/>
+		<message>
+			<![CDATA[com_cce_acadmicyears_view_default_desc]]>
+		</message>
+	</layout>
+       <fields name="request">
+                <fieldset name="request">
+                        <field
+                                name="controller"
+                                type="list"
+                                label="Views"
+                                description="List of Views"
+                                default="academicyears"
+                        >
+                                <option value="academicyears">Academic Years</option>
+                        </field>
+                </fieldset>
+        </fields>
+</metadata>

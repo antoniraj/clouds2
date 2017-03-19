@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout
+		title="CCE-ClassAttendanceReports" option="com_cce_classattendancereports">
+		<help
+			key="JHELP_MENUS_MENU_ITEM_CCE_ClassAttendance"
+		/>
+		<message>
+			<![CDATA[com_cce_classattendance_view_default_desc]]>
+		</message>
+	</layout>
+    <fields name="request">
+                <fieldset name="request">
+                        <field
+                                name="controller"
+                                type="list"
+                                label="Controllers"
+                                description="List of Controllers"
+                                default="attendancereports"
+                        >
+                                <option value="attendancereports">AttendanceReports</option>
+                        </field>
+ 			<field
+                                name="view"
+                                type="list"
+                                label="Views"
+                                description="List of Views"
+                                default="attendancereports"
+                        >
+                                <option value="attendancereports">AttendanceReports</option>
+                        </field>
+			<field
+                                name="layout"
+                                type="list"
+                                label="Layout"
+                                description="List of Layout"
+                                default="classattendance"
+                        >
+                                <option value="todayabsentees">Today Absentees</option>
+                                <option value="absenteesbydate">Absentees By Date</option>
+                                <option value="classattendance">Class Attendance</option>
+                                <option value="regularabsenteeswithleave">Regular Absentees</option>
+                                <option value="regularabsenteeswithoutleave">Regular Absentees without Leave</option>
+                        </field>
+
+
+                </fieldset>
+        </fields>
+
+</metadata>

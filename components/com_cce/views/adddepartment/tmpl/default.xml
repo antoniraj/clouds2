@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout
+		title="CCE-AddDepartment" option="com_cce_add_department">
+		<help
+			key="JHELP_MENUS_MENU_ITEM_CCE_Add_Department"
+		/>
+		<message>
+			<![CDATA[com_cce_add_Department_view_default_desc]]>
+		</message>
+	</layout>
+    <fields name="request">
+                <fieldset name="request">
+                        <field
+                                name="controller"
+                                type="list"
+                                label="Views"
+                                description="List of Views"
+                                default="departments"
+                        >
+                                <option value="departments">Departments</option>
+                        </field>
+                </fieldset>
+        </fields>
+
+</metadata>

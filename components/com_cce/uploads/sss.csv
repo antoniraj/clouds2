@@ -1,0 +1,25 @@
+hprefix,staffcode,firstname,middlename,lastname,dob,gender,bloodgroup,doj,nation,qualification,jobtitle,department,category,postion,grade,experiene,totalexp,status,married,fathername,mothername,add1,add2,city,state,pin,country,phone,mobile,email
+Mr,ST1,STAFF1,M,,1978-02-03,Male,B,,Indian,MCA,Software Engineer,IT,,,,,,,,,,,,,,,India,,243463,a1dfa@gmail.com
+Mr,ST2,STAFF2,K,,1978-02-03,Male,B,,Indian,MCA,Software Engineer,IT,,,,,,,,,,,,,,,India,,23456346,ma1as@gmail.com
+Mr,ST3,STAFF3,S,,1978-02-03,Male,B,,Indian,MCA,Software Engineer,IT,,,,,,,,,,,,,,,India,,243536,m1ddr@gmail.com
+Mr,ST4,STAFF4,A,,1978-02-03,Male,B,,Indian,MCA,Software Engineer,IT,,,,,,,,,,,,,,,India,,45674,jss1sc@gmail.com
+Mrs,ST5,STAFF5,M,,1978-02-03,Male,B,,Indian,MCA,Software Engineer,IT,,,,,,,,,,,,,,,India,,45747,xdd1sx@gmail.com
+Mrs ,ST6,STAFF6,K,,1978-02-03,Male,B,,Indian,MCA,Software Engineer,IT,,,,,,,,,,,,,,,India,,3463,yy212@gmail.com
+Mrs,ST7,STAFF7,S,,1978-02-03,Male,B,,Indian,MCA,Software Engineer,IT,,,,,,,,,,,,,,,India,,346533,yy2133@gmail.com
+Mrs,ST8,STAFF8,A,,1978-02-03,Male,B,,Indian,MCA,Software Engineer,IT,,,,,,,,,,,,,,,India,,45643,y212y4@gmail.com
+Mr,ST9,STAFF9,M,,1978-02-03,Male,B,,Indian,MCA,Software Engineer,IT,,,,,,,,,,,,,,,India,,243463,a1dfa@gmail.com
+Mr,ST10,STAFF10,K,,1978-02-03,Male,B,,Indian,MCA,Software Engineer,IT,,,,,,,,,,,,,,,India,,23456346,ma1as@gmail.com
+Mr,ST11,STAFF11,S,,1978-02-03,Male,B,,Indian,MCA,Software Engineer,IT,,,,,,,,,,,,,,,India,,243536,m1ddr@gmail.com
+Mr,ST12,STAFF12,A,,1978-02-03,Male,B,,Indian,MCA,Software Engineer,IT,,,,,,,,,,,,,,,India,,45674,jss1sc@gmail.com
+Mrs,ST13,STAFF13,M,,1978-02-03,Male,B,,Indian,MCA,Software Engineer,IT,,,,,,,,,,,,,,,India,,45747,xdd1sx@gmail.com
+Mrs ,ST14,STAFF14,K,,1978-02-03,Male,B,,Indian,MCA,Software Engineer,IT,,,,,,,,,,,,,,,India,,3463,yy212@gmail.com
+Mrs,ST15,STAFF15,S,,1978-02-03,Male,B,,Indian,MCA,Software Engineer,IT,,,,,,,,,,,,,,,India,,346533,yy2133@gmail.com
+Mrs,ST16,STAFF16,A,,1978-02-03,Male,B,,Indian,MCA,Software Engineer,IT,,,,,,,,,,,,,,,India,,45643,y212y4@gmail.com
+Mr,ST17,STAFF17,M,,1978-02-03,Male,B,,Indian,MCA,Software Engineer,IT,,,,,,,,,,,,,,,India,,243463,a1dfa@gmail.com
+Mr,ST18,STAFF18,K,,1978-02-03,Male,B,,Indian,MCA,Software Engineer,IT,,,,,,,,,,,,,,,India,,23456346,ma1as@gmail.com
+Mr,ST19,STAFF19,S,,1978-02-03,Male,B,,Indian,MCA,Software Engineer,IT,,,,,,,,,,,,,,,India,,243536,m1ddr@gmail.com
+Mr,ST20,STAFF20,A,,1978-02-03,Male,B,,Indian,MCA,Software Engineer,IT,,,,,,,,,,,,,,,India,,45674,jss1sc@gmail.com
+Mrs,ST21,STAFF21,M,,1978-02-03,Male,B,,Indian,MCA,Software Engineer,IT,,,,,,,,,,,,,,,India,,45747,xdd1sx@gmail.com
+Mrs ,ST22,STAFF22,K,,1978-02-03,Male,B,,Indian,MCA,Software Engineer,IT,,,,,,,,,,,,,,,India,,3463,yy212@gmail.com
+Mrs,ST23,STAFF23,S,,1978-02-03,Male,B,,Indian,MCA,Software Engineer,IT,,,,,,,,,,,,,,,India,,346533,yy2133@gmail.com
+Mrs,ST24,STAFF24,A,,1978-02-03,Male,B,,Indian,MCA,Software Engineer,IT,,,,,,,,,,,,,,,India,,45643,y212y4@gmail.com

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout
+		title="CCE-SMS" option="com_cce_sms">
+		<help
+			key="JHELP_MENUS_MENU_ITEM_CCE_SMS"
+		/>
+		<message>
+			<![CDATA[com_cce_staff_view_default_desc]]>
+		</message>
+	</layout>
+        <fields name="request">
+                <fieldset name="request">
+                        <field
+                                name="controller"
+                                type="list"
+                                label="Views"
+                                description="List of Views"
+                                default="sms"
+                        >
+                                <option value="sms">SMS</option>
+                        </field>
+                </fieldset>
+        </fields>
+
+</metadata>

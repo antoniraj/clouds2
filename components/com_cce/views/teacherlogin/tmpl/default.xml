@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout
+		title="CCE-TeacherLogin" option="com_cce_teacherlogin">
+		<help
+			key="JHELP_MENUS_MENU_ITEM_CCE_TEACHERLOGIN"
+		/>
+		<message>
+			<![CDATA[com_cce_teacherlogin_view_default_desc]]>
+		</message>
+	</layout>
+    <fields name="request">
+                <fieldset name="request">
+                        <field
+                                name="controller"
+                                type="list"
+                                label="Controllers"
+                                description="List of Controllers"
+                                default="TeacherLogin"
+                        >
+                                <option value="teacherlogin">TeacherLogin</option>
+                        </field>
+ 			<field
+                                name="view"
+                                type="list"
+                                label="Views"
+                                description="List of Views"
+                                default="teacherlogin"
+                        >
+                                <option value="teacherlogin">TeacherLogin</option>
+                        </field>
+			<field
+                                name="layout"
+                                type="list"
+                                label="Layout"
+                                description="List of Layout"
+                                default="teacherlogin"
+                        >
+                                <option value="default">MyClasses</option>
+                                <option value="mysubjects">MySubjects</option>
+                        </field>
+
+
+                </fieldset>
+        </fields>
+
+</metadata>

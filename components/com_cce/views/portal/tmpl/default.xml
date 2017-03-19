@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout
+		title="CCE-Portal" option="com_cce_portal">
+		<help
+			key="JHELP_MENUS_MENU_ITEM_CCE_MASTER"
+		/>
+		<message>
+			<![CDATA[com_cce_master_view_default_desc]]>
+		</message>
+	</layout>
+        <fields name="request">
+                <fieldset name="request">
+                        <field
+                                name="controller"
+                                type="list"
+                                label="Controller"
+                                description="List of Controllers"
+                                default="portal"
+                        >
+                                <option value="portal">Portal</option>
+                        </field>
+			<field
+                                name="view"
+                                type="list"
+                                label="Views"
+                                description="List of Views"
+                                default="portal"
+                        >
+                                <option value="portal">Portal</option>
+                        </field>	
+			<field
+                                name="layout"
+                                type="list"
+                                label="Layout"
+                                description="List of Portals"
+                                default="portal"
+                        >
+                                <option value="portal">Portal</option>
+                        </field>
+
+
+                </fieldset>
+        </fields>
+
+</metadata>

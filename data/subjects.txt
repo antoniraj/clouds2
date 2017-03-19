@@ -1,0 +1,33 @@
+INSERT INTO ya_msubjects (subjecttitle,subjectcode,acronym,credits,passmark,marks,subjecttype,sessionduration) values('Maths','MA6','MA','5','35','100','Theory','0');
+INSERT INTO ya_msubjects (subjecttitle,subjectcode,acronym,credits,passmark,marks,subjecttype,sessionduration) values('Science','SC6','SC','5','35','100','Theory','0');
+INSERT INTO ya_msubjects (subjecttitle,subjectcode,acronym,credits,passmark,marks,subjecttype,sessionduration) values('Social Science','SS6','SS','5','35','100','Theory','0');
+INSERT INTO ya_msubjects (subjecttitle,subjectcode,acronym,credits,passmark,marks,subjecttype,sessionduration) values('Physical Education','PE6','PE','5','35','100','Theory','0');
+
+INSERT INTO ya_msubjects (subjecttitle,subjectcode,acronym,credits,passmark,marks,subjecttype,sessionduration) values('Tamil','TA7','TA','5','35','100','Theory','0');
+INSERT INTO ya_msubjects (subjecttitle,subjectcode,acronym,credits,passmark,marks,subjecttype,sessionduration) values('English','EN7','EN','5','35','100','Theory','0');
+INSERT INTO ya_msubjects (subjecttitle,subjectcode,acronym,credits,passmark,marks,subjecttype,sessionduration) values('Maths','MA7','MA','5','35','100','Theory','0');
+INSERT INTO ya_msubjects (subjecttitle,subjectcode,acronym,credits,passmark,marks,subjecttype,sessionduration) values('Science','SC7','SC','5','35','100','Theory','0');
+INSERT INTO ya_msubjects (subjecttitle,subjectcode,acronym,credits,passmark,marks,subjecttype,sessionduration) values('Social Science','SS7','SS','5','35','100','Theory','0');
+INSERT INTO ya_msubjects (subjecttitle,subjectcode,acronym,credits,passmark,marks,subjecttype,sessionduration) values('Physical Education','PE7','PE','5','35','100','Theory','0');
+
+INSERT INTO ya_msubjects (subjecttitle,subjectcode,acronym,credits,passmark,marks,subjecttype,sessionduration) values('Tamil','TA8','TA','5','35','100','Theory','0');
+INSERT INTO ya_msubjects (subjecttitle,subjectcode,acronym,credits,passmark,marks,subjecttype,sessionduration) values('English','EN8','EN','5','35','100','Theory','0');
+INSERT INTO ya_msubjects (subjecttitle,subjectcode,acronym,credits,passmark,marks,subjecttype,sessionduration) values('Maths','MA8','MA','5','35','100','Theory','0');
+INSERT INTO ya_msubjects (subjecttitle,subjectcode,acronym,credits,passmark,marks,subjecttype,sessionduration) values('Science','SC8','SC','5','35','100','Theory','0');
+INSERT INTO ya_msubjects (subjecttitle,subjectcode,acronym,credits,passmark,marks,subjecttype,sessionduration) values('Social Science','SS8','SS','5','35','100','Theory','0');
+INSERT INTO ya_msubjects (subjecttitle,subjectcode,acronym,credits,passmark,marks,subjecttype,sessionduration) values('Physical Education','PE8','PE','5','35','100','Theory','0');
+
+INSERT INTO ya_msubjects (subjecttitle,subjectcode,acronym,credits,passmark,marks,subjecttype,sessionduration) values('Tamil','TA9','TA','5','35','100','Theory','0');
+INSERT INTO ya_msubjects (subjecttitle,subjectcode,acronym,credits,passmark,marks,subjecttype,sessionduration) values('English','EN9','EN','5','35','100','Theory','0');
+INSERT INTO ya_msubjects (subjecttitle,subjectcode,acronym,credits,passmark,marks,subjecttype,sessionduration) values('Maths','MA9','MA','5','35','100','Theory','0');
+INSERT INTO ya_msubjects (subjecttitle,subjectcode,acronym,credits,passmark,marks,subjecttype,sessionduration) values('Science','SC9','SC','5','35','100','Theory','0');
+INSERT INTO ya_msubjects (subjecttitle,subjectcode,acronym,credits,passmark,marks,subjecttype,sessionduration) values('Social Science','SS9','SS','5','35','100','Theory','0');
+INSERT INTO ya_msubjects (subjecttitle,subjectcode,acronym,credits,passmark,marks,subjecttype,sessionduration) values('Physical Education','PE9','PE','5','35','100','Theory','0');
+
+INSERT INTO ya_msubjects (subjecttitle,subjectcode,acronym,credits,passmark,marks,subjecttype,sessionduration) values('Tamil','TA10','TA','5','35','100','Theory','0');
+INSERT INTO ya_msubjects (subjecttitle,subjectcode,acronym,credits,passmark,marks,subjecttype,sessionduration) values('English','EN10','EN','5','35','100','Theory','0');
+INSERT INTO ya_msubjects (subjecttitle,subjectcode,acronym,credits,passmark,marks,subjecttype,sessionduration) values('Maths','MA10','MA','5','35','100','Theory','0');
+INSERT INTO ya_msubjects (subjecttitle,subjectcode,acronym,credits,passmark,marks,subjecttype,sessionduration) values('Science','SC10','SC','5','35','100','Theory','0');
+INSERT INTO ya_msubjects (subjecttitle,subjectcode,acronym,credits,passmark,marks,subjecttype,sessionduration) values('Social Science','SS10','SS','5','35','100','Theory','0');
+INSERT INTO ya_msubjects (subjecttitle,subjectcode,acronym,credits,passmark,marks,subjecttype,sessionduration) values('Physical Education','PE10','PE','5','35','100','Theory','0');
+

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout
+		title="CCE-SchoolCal" option="com_cce_schoolcal">
+		<help
+			key="JHELP_MENUS_MENU_ITEM_CCE_SCHOOLCAL"
+		/>
+		<message>
+			<![CDATA[com_cce_schoolcal_view_default_desc]]>
+		</message>
+	</layout>
+    <fields name="request">
+                <fieldset name="request">
+                        <field
+                                name="controller"
+                                type="list"
+                                label="Controllers"
+                                description="List of Controllers"
+                                default="schoolcal"
+                        >
+                                <option value="schoolcal">SchoolCal</option>
+                                <option value="calendar">Calendar</option>
+                        </field>
+ 			<field
+                                name="view"
+                                type="list"
+                                label="Views"
+                                description="List of Views"
+                                default="cosmarks"
+                        >
+                                <option value="schoolcal">SchoolCal</option>
+                        </field>
+			<field
+                                name="layout"
+                                type="list"
+                                label="Layout"
+                                description="List of Layout"
+                                default="schoolcal"
+                        >
+
+                                <option value="schoolcal">SchoolCal</option>
+                                <option value="cal">Calendar</option>
+                        </field>
+
+
+                </fieldset>
+        </fields>
+
+</metadata>

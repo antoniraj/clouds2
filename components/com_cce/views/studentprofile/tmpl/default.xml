@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout
+		title="CCE-StudentProfile" option="com_cce_studentprofile">
+		<help
+			key="JHELP_MENUS_MENU_ITEM_CCE_STUDENTPROFILE"
+		/>
+		<message>
+			<![CDATA[com_cce_studentprofile_view_default_desc]]>
+		</message>
+	</layout>
+    <fields name="request">
+                <fieldset name="request">
+                        <field
+                                name="controller"
+                                type="list"
+                                label="Controllers"
+                                description="List of Controllers"
+                                default="studentprofile"
+                        >
+                                <option value="studentprofile">StudentProfile</option>
+                        </field>
+ 			<field
+                                name="view"
+                                type="list"
+                                label="Views"
+                                description="List of Views"
+                                default="studentprofile"
+                        >
+                                <option value="studentprofile">studentprofile</option>
+                        </field>
+			<field
+                                name="layout"
+                                type="list"
+                                label="Layout"
+                                description="List of Layout"
+                                default="search"
+                        >
+                                <option value="search">Search</option>
+                        </field>
+
+
+                </fieldset>
+        </fields>
+
+</metadata>

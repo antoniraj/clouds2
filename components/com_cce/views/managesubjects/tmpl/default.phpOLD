@@ -1,0 +1,94 @@
+<?php
+        defined('_JEXEC') OR DIE('Access denied..');
+        $app = JFactory::getApplication();
+	$iconsDir = JURI::base() . 'components/com_cce/images/64x64';
+?>
+<div>
+        <div style="float:left;">
+           <img src="<?php echo $iconsDir.'/gradebook.png'; ?>" alt="" style="width: 64px; height: 64px;" />
+        </div>
+        <div>
+                <div>&nbsp;</div>
+                <h1>TERM REPORT</h1>
+        </div>
+</div>
+<?php
+	echo '<center><h1>['.$this->srec->subjectcode.']'.$this->srec->subjectname.'</h1><h3>['.$this->trec->term.']</h3></center>';
+?>
+<hr /> <br />
+<table border="1" cellspacing="2" cellpadding="3">
+
+<table>
+<tr>
+<th rowspan="2">SNO</th><th rowspan="2">REGNO</th><th rowspan="2">NAME</th>
+
+ <?php
+foreach($this->gradebook as $rec) {
+	$details=$this->model->getGradeBookDetails($rec->id);
+	$gc=count($details);
+	if($gc>=4){
+		echo '<th colspan="5">'.$rec->title.'('.$rec->weightage.'%)</th>';
+	}else{
+		echo '<th colspan="'.($gc+1).'">'.$rec->title.'('.$rec->weightage.'%)</th>';
+	}	
+}
+echo '</tr><tr>';
+foreach($this->gradebook as $rec) {
+	$details=$this->model->getGradeBookDetails($rec->id);
+	$gc=count($details);
+	if($gc>=4){
+		echo '<th>1</th><th>2</th><th>3</th><th>4</th><th>'.$rec->code.'</th>';
+	}else{
+		$i=0;
+		while($i<$gc){
+			echo '<th>'.($i+1).'</th>';
+			$i++;
+		}
+		echo '<th>'.$rec->code.'</th>';
+	}	
+}
+echo '</tr>';
+//Table Heading
+//This block is uses 4 x 5 = 20 Marks scheme
+$sno=1;
+foreach($this->students as $student) {
+	echo '<tr>';
+	echo '<td>'.$sno++.'</td>';
+	echo '<td>'.$student->registerno.'</td>';
+	echo '<td>'.$student->firstname.'</td>';
+	foreach($this->gradebook as $rec) {
+		$details=$this->model->getGradeBookDetails($rec->id);
+		$gc=count($details);
+		$this->model->getScholasticAMarksByCategory($student->id,$rec->id,$mrec);
+		if($gc<=4) 
+			$rs = $gc-count($mrec);
+		else
+			$rs = 4 - count($mrec);
+		
+		$sum=0;
+		foreach($mrec as $m)
+		{
+			echo '<td>'.$m['marks'].'</td>';
+			$sum = $sum + $m['marks'];
+		}
+		$i=0;
+		while($i < $rs){
+			echo '<td>0</td>';
+			$i++;
+		}
+		echo '<td><b>'.$sum.'</b></td>';
+		/*
+		$details=$this->model->getGradeBookDetails($rec->id);
+    		foreach($details as $detail)
+		{
+		        $this->model->getScholasticAMarks($student->id,$detail->id,$mrec);
+			//echo '<td>'.$mrec->marks.'</td>';
+			echo '<td>'.$mrec->marks.'</td>';
+		}
+		*/
+	}
+	echo '</tr>';
+} 
+?>
+</table>
+
