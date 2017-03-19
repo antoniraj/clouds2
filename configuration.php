@@ -1,7 +1,7 @@
 <?php
 class JConfig {
 	public $offline = '0';
-	public $offline_message = 'This site is down for maintenance.<br /> Please check back again soon.';
+	public $offline_message = 'This site is down for maintenance .<br /> Please check back again soon.';
 	public $display_offline_message = '1';
 	public $offline_image = '';
 	public $sitename = 'MIS';
@@ -53,8 +53,8 @@ class JConfig {
 	public $sef_suffix = '1';
 	public $unicodeslugs = '1';
 	public $feed_limit = '10';
-	public $log_path = 'http://localhost/scloud2.0/logs';
-	public $tmp_path = 'http://localhost/scloud2.0/tmp';
+	public $log_path = 'http://localhost/clouds2/logs';
+	public $tmp_path = 'http://localhost/clouds2/tmp';
 	public $lifetime = '15';
 	public $session_handler = 'database';
 	public $MetaRights = '';
