@@ -41,10 +41,8 @@ $sitedescription = $this->params->get('sitedescription');
 	<?php endif; ?>
 	
 
-	<div id="header_wrap">
+	<!-- <div id="header_wrap">
 		<div id="header">
-
-			<!-- Logo -->
 			<div id="logo">
 
 			<?php if ($logo && $logoimage == 1): ?>
@@ -64,12 +62,11 @@ $sitedescription = $this->params->get('sitedescription');
 
 	  		</div>
 
-			<!-- Search -->
 			<div id="search">		
 				<jdoc:include type="modules" name="position-0" />
 			</div>
 		</div>
-	</div>
+	</div> -->
 	
 	<div id="topmenu_wrap">
 		<div id="topmenu">
@@ -143,34 +140,21 @@ $sitedescription = $this->params->get('sitedescription');
 	</div>	
 
 	
-	<!-- Banner/Links -->
+	<!-- Banner/Links 
 	<div id="box_wrap">
 		<div id="box_placeholder">
 			<div id="box1"><jdoc:include type="modules" name="position-9" style="xhtml" /></div>
 			<div id="box2"><jdoc:include type="modules" name="position-10" style="xhtml" /></div>
 			<div id="box3"><jdoc:include type="modules" name="position-11" style="xhtml" /></div>
 		</div>
-	</div>
+	</div>-->
 	
 
 	<div id="push"></div>
-
+	<div id="copyright">
+		&copy;<?php echo date('Y'); ?> <?php echo $sitename; ?> | Template by <a href="#">scloud.com</a><br/>
+	</div>
 </div>
-
-
-
-
-
-<!-- Page End -->
-
-
-
-
-
-<div id="copyright">
-	&copy;<?php echo date('Y'); ?> <?php echo $sitename; ?> | Template by <a href="#">santhgroups.com</a><br/>
-</div>
-
 
 </body>
 </html>

@@ -154,38 +154,28 @@ $iconsDir = JURI::base() . 'components/com_cce/images/logo';
 		 }
                  ?>
               </ul>
-              		  <div id="nav">
-		 <jdoc:include type="modules" name="menu"  style="none" />
+
+              <div id="nav">
+		<jdoc:include type="modules" name="menu"  style="none" />
 		 </div>
             </div>
-            
-            
             <!--/.nav-collapse --> 
-            
           </div>
         </div>
       </div>
       <!-- topbar ends -->
 
-      <?php
-			}
-				?>
+      <?php }?>
       <?php include "html/com_content/archive/component.php"; ?>
   <?php
-				if($user->username)
-				{
-	?>
+    if($user->username){
+    ?>
   <?php if ($this->countModules('breadcrumb')) : ?>
-  <div>
-	 
     <ul class="breadcrumb">
-
       <jdoc:include type="modules" name="breadcrumb"  style="none" />
     </ul>
-  </div>
   
-  <?php endif; 
-        }?>
+  <?php endif; }?>
   <!-- center content-->
   <div id="content">
 	  <noscript>
@@ -219,7 +209,7 @@ $iconsDir = JURI::base() . 'components/com_cce/images/logo';
   </div>
 </div>
 <?php
-				}
+  }
 ?>
 <div class="back-bottom"><!--shadow top--> </div>
 <?php

@@ -51,6 +51,7 @@ JHtml::_('behavior.keepalive');
 		<input id="modlgn-remember" type="checkbox" name="remember" class="inputbox" value="yes"/>
 	</p>
 	<?php endif; ?>
+	
 	<input type="submit" name="Submit" class="button" value="<?php echo JText::_('JLOGIN') ?>" />
 	<input type="hidden" name="option" value="com_users" />
 	<input type="hidden" name="task" value="user.login" />

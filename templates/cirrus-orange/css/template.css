@@ -1945,3 +1945,15 @@ body.contentpane h5 a {
 body.contentpane a:hover {
 	color: #2c261c;
 }
+/**********--New Login--**************/
+body{
+	background-color:transparent;
+}
+#header_wrap{
+	background-color:transparent;
+}
+#header{
+	background-image:none;
+	min-height:auto;
+	margin-bottom:0;
+}
